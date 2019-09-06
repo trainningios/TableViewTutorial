@@ -19,36 +19,42 @@ struct Headline {
 }
 
 var headlines = [
-    Headline(id: 1, title: "Mazda 3", text: "Price: 8500000000", image: "mazdared", color: UIColor.red),
-    Headline(id: 2, title: "Mazda 3", text: "Price: 8000000000", image: "mazdablue", color: UIColor.blue),
-    Headline(id: 3, title: "Mazda 3", text: "Price: 9000000000", image: "mazdablack", color: UIColor.black),
+    [
+        Headline(id: 1, title: "Mazda 3", text: "Price: 9800000000", image: "mazdared", color: UIColor.red),
+        Headline(id: 2, title: "Mazda 3", text: "Price: 9600000000", image: "mazdablue", color: UIColor.blue),
+        Headline(id: 3, title: "Mazda 3", text: "Price: 9000000000", image: "mazdablack", color: UIColor.black)
+    ],
+    [
+        Headline(id: 4, title: "Mazda 3", text: "Price: 8000000000", image: "mazdared", color: UIColor.red),
+        Headline(id: 5, title: "Mazda 3", text: "Price: 8500000000", image: "mazdablue", color: UIColor.blue),
+        Headline(id: 6, title: "Mazda 3", text: "Price: 8700000000", image: "mazdablack", color: UIColor.black)
+    ]
     
 ]
 
     class CarTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return headlines.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return headlines.count
+        return headlines[section].count
     }
         
-    
+    let headerTitles = ["Mazda Version 2", "Mazda Version 1.5"]
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "Mazda Version 2"
+        if section < headerTitles.count {
+            return headerTitles[section]
         }
-        else{
-            return "Mazda Version 1.5"
-        }
+        
+        return nil
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
-        let headline = headlines[indexPath.row]
+        let headline = headlines[indexPath.section][indexPath.row]
         cell.textLabel?.text = headline.title
         cell.textLabel?.textColor = UIColor.white
         cell.detailTextLabel?.text = headline.text
