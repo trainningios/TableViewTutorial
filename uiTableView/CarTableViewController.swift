@@ -14,25 +14,24 @@ struct Headline {
     var text : String
     var image : String
     var color: UIColor!
-    
-    
+
 }
-
-var headlines = [
-    [
-        Headline(id: 1, title: "Mazda 3", text: "Price: 9800000000", image: "mazdared", color: UIColor.red),
-        Headline(id: 2, title: "Mazda 3", text: "Price: 9600000000", image: "mazdablue", color: UIColor.blue),
-        Headline(id: 3, title: "Mazda 3", text: "Price: 9000000000", image: "mazdablack", color: UIColor.black)
-    ],
-    [
-        Headline(id: 4, title: "Mazda 3", text: "Price: 8000000000", image: "mazdared", color: UIColor.red),
-        Headline(id: 5, title: "Mazda 3", text: "Price: 8500000000", image: "mazdablue", color: UIColor.blue),
-        Headline(id: 6, title: "Mazda 3", text: "Price: 8700000000", image: "mazdablack", color: UIColor.black)
-    ]
+class CarTableViewController: UITableViewController {
+        var headlines = [
+            [
+                Headline(id: 1, title: "Mazda 3 2.0", text: "Price: 9800000000", image: "mazdared", color: UIColor.red),
+                Headline(id: 2, title: "Mazda 3 2.0", text: "Price: 9600000000", image: "mazdablue", color: UIColor.blue),
+                Headline(id: 3, title: "Mazda 3 2.0", text: "Price: 9000000000", image: "mazdablack", color: UIColor.black)
+            ],
+            [
+                Headline(id: 4, title: "Mazda 3 1.5", text: "Price: 8000000000", image: "mazdared", color: UIColor.red),
+                Headline(id: 5, title: "Mazda 3 1.5", text: "Price: 8500000000", image: "mazdablue", color: UIColor.blue),
+                Headline(id: 6, title: "Mazda 3 1.5", text: "Price: 8700000000", image: "mazdablack", color: UIColor.black)
+            ]
+            
+        ]
     
-]
-
-    class CarTableViewController: UITableViewController {
+        
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return headlines.count
@@ -66,4 +65,18 @@ var headlines = [
         return cell
     }
     
-}
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CarDetailViewController") as! CarDetailViewController
+        viewController.details = self.headlines[indexPath.section][indexPath.row]
+       self.navigationController?.pushViewController(viewController, animated: true)
+
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+            
+        }
+    }
+    
+
