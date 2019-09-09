@@ -18,6 +18,13 @@
 		04EA56882321786B00E297A4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA56872321786B00E297A4 /* Car.swift */; };
 		160F12148D732ADF25D52C00 /* Pods_TrainingTableViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA7957A08CD067621B6078 /* Pods_TrainingTableViewTests.framework */; };
 		4AD8DB9AA901AEBF7BFEB3F5 /* Pods_TrainingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588858DFE31923FCBAB21BC9 /* Pods_TrainingTableView.framework */; };
+		DFFE0E5E23267A29003ACFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFE0E4F23267A29003ACFE8 /* Assets.xcassets */; };
+		DFFE0E5F23267A29003ACFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFE0E5023267A29003ACFE8 /* LaunchScreen.storyboard */; };
+		DFFE0E6023267A29003ACFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFE0E5223267A29003ACFE8 /* Main.storyboard */; };
+		DFFE0E6123267A29003ACFE8 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE0E5423267A29003ACFE8 /* CarDetailViewController.swift */; };
+		DFFE0E6223267A29003ACFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE0E5523267A29003ACFE8 /* AppDelegate.swift */; };
+		DFFE0E6323267A29003ACFE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFFE0E5623267A29003ACFE8 /* Info.plist */; };
+		DFFE0E6423267A29003ACFE8 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE0E5723267A29003ACFE8 /* CarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 04EA56532320B45B00E297A4;
 			remoteInfo = TrainingTableView;
+		};
+		DFFE0E5C23267A29003ACFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFE0E5823267A29003ACFE8 /* uiTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DF12819D232206480003F634;
+			remoteInfo = uiTableView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +63,14 @@
 		84279B1317B82D2FBD31D159 /* Pods-TrainingTableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingTableViewTests.release.xcconfig"; path = "Target Support Files/Pods-TrainingTableViewTests/Pods-TrainingTableViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA0BCF10AC2811354268F4F5 /* Pods-TrainingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingTableView.release.xcconfig"; path = "Target Support Files/Pods-TrainingTableView/Pods-TrainingTableView.release.xcconfig"; sourceTree = "<group>"; };
 		CE56A5E3681C298002DD0158 /* Pods-TrainingTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingTableView.debug.xcconfig"; path = "Target Support Files/Pods-TrainingTableView/Pods-TrainingTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		DFFE0E4F23267A29003ACFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFFE0E5123267A29003ACFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFFE0E5323267A29003ACFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFFE0E5423267A29003ACFE8 /* CarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		DFFE0E5523267A29003ACFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFFE0E5623267A29003ACFE8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFE0E5723267A29003ACFE8 /* CarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
+		DFFE0E5823267A29003ACFE8 /* uiTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = uiTableView.xcodeproj; sourceTree = "<group>"; };
 		EBAA7957A08CD067621B6078 /* Pods_TrainingTableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingTableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +195,37 @@
 			path = BaseVIewController;
 			sourceTree = "<group>";
 		};
+		DFFE0E4D23267A29003ACFE8 /* uiTableView 2 */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE0E4E23267A29003ACFE8 /* uiTableView */,
+				DFFE0E5823267A29003ACFE8 /* uiTableView.xcodeproj */,
+			);
+			path = "uiTableView 2";
+			sourceTree = "<group>";
+		};
+		DFFE0E4E23267A29003ACFE8 /* uiTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE0E4F23267A29003ACFE8 /* Assets.xcassets */,
+				DFFE0E5023267A29003ACFE8 /* LaunchScreen.storyboard */,
+				DFFE0E5223267A29003ACFE8 /* Main.storyboard */,
+				DFFE0E5423267A29003ACFE8 /* CarDetailViewController.swift */,
+				DFFE0E5523267A29003ACFE8 /* AppDelegate.swift */,
+				DFFE0E5623267A29003ACFE8 /* Info.plist */,
+				DFFE0E5723267A29003ACFE8 /* CarTableViewController.swift */,
+			);
+			path = uiTableView;
+			sourceTree = "<group>";
+		};
+		DFFE0E5923267A29003ACFE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFE0E5D23267A29003ACFE8 /* uiTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E4E17735A1CAD05FA9E06DA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +240,7 @@
 		FCA36AE5DA093BAF8F6273F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFFE0E4D23267A29003ACFE8 /* uiTableView 2 */,
 				588858DFE31923FCBAB21BC9 /* Pods_TrainingTableView.framework */,
 				EBAA7957A08CD067621B6078 /* Pods_TrainingTableViewTests.framework */,
 			);
@@ -264,6 +318,12 @@
 			mainGroup = 04EA564B2320B45B00E297A4;
 			productRefGroup = 04EA56552320B45B00E297A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DFFE0E5923267A29003ACFE8 /* Products */;
+					ProjectRef = DFFE0E5823267A29003ACFE8 /* uiTableView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				04EA56532320B45B00E297A4 /* TrainingTableView */,
@@ -272,6 +332,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		DFFE0E5D23267A29003ACFE8 /* uiTableView.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = uiTableView.app;
+			remoteRef = DFFE0E5C23267A29003ACFE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		04EA56522320B45B00E297A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -279,7 +349,11 @@
 			files = (
 				04EA56622320B45D00E297A4 /* LaunchScreen.storyboard in Resources */,
 				04EA565F2320B45D00E297A4 /* Assets.xcassets in Resources */,
+				DFFE0E5E23267A29003ACFE8 /* Assets.xcassets in Resources */,
+				DFFE0E6023267A29003ACFE8 /* Main.storyboard in Resources */,
+				DFFE0E5F23267A29003ACFE8 /* LaunchScreen.storyboard in Resources */,
 				04EA565D2320B45B00E297A4 /* Main.storyboard in Resources */,
+				DFFE0E6323267A29003ACFE8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +437,10 @@
 			files = (
 				04EA568323215F2F00E297A4 /* BaseViewController.swift in Sources */,
 				04EA56882321786B00E297A4 /* Car.swift in Sources */,
+				DFFE0E6123267A29003ACFE8 /* CarDetailViewController.swift in Sources */,
 				04EA567F23215EB600E297A4 /* CarListViewController.swift in Sources */,
+				DFFE0E6423267A29003ACFE8 /* CarTableViewController.swift in Sources */,
+				DFFE0E6223267A29003ACFE8 /* AppDelegate.swift in Sources */,
 				04EA56582320B45B00E297A4 /* AppDelegate.swift in Sources */,
 				04EA568123215ED600E297A4 /* CarListPresenter.swift in Sources */,
 			);
@@ -402,6 +479,22 @@
 				04EA56612320B45D00E297A4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DFFE0E5023267A29003ACFE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFE0E5123267A29003ACFE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DFFE0E5223267A29003ACFE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFE0E5323267A29003ACFE8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
