@@ -17,20 +17,25 @@ struct Headline {
 
 }
 class CarTableViewController: UITableViewController {
+    
+    
+    
         var headlines = [
             [
-                Headline(id: 1, title: "Mazda 3 2.0", text: "Price: 9800000000", image: "mazdared", color: UIColor.red),
-                Headline(id: 2, title: "Mazda 3 2.0", text: "Price: 9600000000", image: "mazdablue", color: UIColor.blue),
-                Headline(id: 3, title: "Mazda 3 2.0", text: "Price: 9000000000", image: "mazdablack", color: UIColor.black)
+                Headline(id: 1, title: "Mazda 3 2.0", text: "Price: 9800000000", image: "https://f1.media.brightcove.com/8/1078702682/1078702682_6004950245001_6004956161001-vs.jpg?pubId=1078702682&videoId=6004956161001", color: UIColor.red),
+                Headline(id: 2, title: "Mazda 3 2.0", text: "Price: 9600000000", image: "https://c.ndtvimg.com/2019-08/k8519lf8_bugatti-centodieci-unveiled-at-pebble-beach-car-show_625x300_17_August_19.jpg", color: UIColor.blue),
+                Headline(id: 3, title: "Mazda 3 2.0", text: "Price: 9000000000", image: "https://cdn.motor1.com/images/mgl/17XG3/s1/bugatti-la-voiture-noire-leaves-geneva.jpg", color: UIColor.black)
             ],
             [
-                Headline(id: 4, title: "Mazda 3 1.5", text: "Price: 8000000000", image: "mazdared", color: UIColor.red),
-                Headline(id: 5, title: "Mazda 3 1.5", text: "Price: 8500000000", image: "mazdablue", color: UIColor.blue),
-                Headline(id: 6, title: "Mazda 3 1.5", text: "Price: 8700000000", image: "mazdablack", color: UIColor.black)
+                Headline(id: 4, title: "Mazda 3 1.5", text: "Price: 8000000000", image: "https://f1.media.brightcove.com/8/1078702682/1078702682_6004950245001_6004956161001-vs.jpg?pubId=1078702682&videoId=6004956161001", color: UIColor.red),
+                Headline(id: 5, title: "Mazda 3 1.5", text: "Price: 8500000000", image: "https://c.ndtvimg.com/2019-08/k8519lf8_bugatti-centodieci-unveiled-at-pebble-beach-car-show_625x300_17_August_19.jpg", color: UIColor.blue),
+                Headline(id: 6, title: "Mazda 3 1.5", text: "Price: 8700000000", image: "https://cdn.motor1.com/images/mgl/17XG3/s1/bugatti-la-voiture-noire-leaves-geneva.jpg", color: UIColor.black)
             ]
             
         ]
     
+    
+
         
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,6 +55,7 @@ class CarTableViewController: UITableViewController {
         return nil
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         
@@ -59,13 +65,13 @@ class CarTableViewController: UITableViewController {
         cell.detailTextLabel?.text = headline.text
         cell.detailTextLabel?.textColor = UIColor.white
         cell.backgroundColor = headline.color
-        cell.imageView?.image = UIImage(named: headline.image)
-
+        cell.imageView!.imageFromServerURL(urlString:  headline.image, PlaceHolderImage: UIImage.init(named: "mazdablue")!)
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CarDetailViewController") as! CarDetailViewController
         viewController.details = self.headlines[indexPath.section][indexPath.row]
@@ -78,5 +84,27 @@ class CarTableViewController: UITableViewController {
             
         }
     }
+
+
+extension UIImageView {
     
+    public func imageFromServerURL(urlString: String, PlaceHolderImage:UIImage) {
+        
+        if self.image == nil{
+            self.image = PlaceHolderImage
+        }
+        
+        URLSession.shared.dataTask(with: NSURL(string: urlString)! as URL, completionHandler: { (data, response, error) -> Void in
+            
+            if error != nil {
+                print(error ?? "No Error")
+                return
+            }
+            DispatchQueue.main.async(execute: { () -> Void in
+                let image = UIImage(data: data!)
+                self.image = image
+            })
+            
+        }).resume()
+    }}
 
