@@ -4,6 +4,73 @@
    <FileRef
       location = "group:TrainingTableView.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:../../Desktop/Test1209"
+      name = "Test1209">
+      <Group
+         location = "group:Test1209Tests"
+         name = "Test1209Tests">
+         <FileRef
+            location = "group:Test1209Tests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Test1209"
+         name = "Test1209">
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ListDetailsTableViewController.swift">
+         </FileRef>
+         <Group
+            location = "group:Model"
+            name = "Model">
+            <FileRef
+               location = "group:Headline.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DetailsViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:ListTableViewController.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Test1209.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

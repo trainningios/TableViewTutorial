@@ -53,20 +53,6 @@
 			remoteGlobalIDString = DF6020012329E04700930EA5;
 			remoteInfo = Test1209Tests;
 		};
-		DF6020A5232A39AD00930EA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF6020A0232A39AD00930EA5 /* Test1209.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DF601FED2329E04500930EA5;
-			remoteInfo = Test1209;
-		};
-		DF6020A7232A39AD00930EA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF6020A0232A39AD00930EA5 /* Test1209.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DF6020012329E04700930EA5;
-			remoteInfo = Test1209Tests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -100,18 +86,6 @@
 		DF60205F232A397B00930EA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF602060232A397B00930EA5 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		DF602061232A397B00930EA5 /* Test1209.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Test1209.xcodeproj; sourceTree = "<group>"; };
-		DF602091232A39AD00930EA5 /* Test1209Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1209Tests.swift; sourceTree = "<group>"; };
-		DF602092232A39AD00930EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF602094232A39AD00930EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF602096232A39AD00930EA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DF602098232A39AD00930EA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF602099232A39AD00930EA5 /* ListDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailsTableViewController.swift; sourceTree = "<group>"; };
-		DF60209B232A39AD00930EA5 /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
-		DF60209C232A39AD00930EA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF60209D232A39AD00930EA5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		DF60209E232A39AD00930EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF60209F232A39AD00930EA5 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		DF6020A0232A39AD00930EA5 /* Test1209.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Test1209.xcodeproj; sourceTree = "<group>"; };
 		EBAA7957A08CD067621B6078 /* Pods_TrainingTableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingTableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,7 +115,6 @@
 				04EA56562320B45B00E297A4 /* TrainingTableView */,
 				04EA566B2320B45D00E297A4 /* TrainingTableViewTests */,
 				04EA56552320B45B00E297A4 /* Products */,
-				DF60208F232A39AD00930EA5 /* Test1209 */,
 				E4E17735A1CAD05FA9E06DA6 /* Pods */,
 				FCA36AE5DA093BAF8F6273F7 /* Frameworks */,
 			);
@@ -289,58 +262,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF60208F232A39AD00930EA5 /* Test1209 */ = {
-			isa = PBXGroup;
-			children = (
-				DF602090232A39AD00930EA5 /* Test1209Tests */,
-				DF602093232A39AD00930EA5 /* Test1209 */,
-				DF6020A0232A39AD00930EA5 /* Test1209.xcodeproj */,
-			);
-			path = Test1209;
-			sourceTree = "<group>";
-		};
-		DF602090232A39AD00930EA5 /* Test1209Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DF602091232A39AD00930EA5 /* Test1209Tests.swift */,
-				DF602092232A39AD00930EA5 /* Info.plist */,
-			);
-			path = Test1209Tests;
-			sourceTree = "<group>";
-		};
-		DF602093232A39AD00930EA5 /* Test1209 */ = {
-			isa = PBXGroup;
-			children = (
-				DF602094232A39AD00930EA5 /* Assets.xcassets */,
-				DF602095232A39AD00930EA5 /* LaunchScreen.storyboard */,
-				DF602097232A39AD00930EA5 /* Main.storyboard */,
-				DF602099232A39AD00930EA5 /* ListDetailsTableViewController.swift */,
-				DF60209A232A39AD00930EA5 /* Model */,
-				DF60209C232A39AD00930EA5 /* AppDelegate.swift */,
-				DF60209D232A39AD00930EA5 /* DetailsViewController.swift */,
-				DF60209E232A39AD00930EA5 /* Info.plist */,
-				DF60209F232A39AD00930EA5 /* ListTableViewController.swift */,
-			);
-			path = Test1209;
-			sourceTree = "<group>";
-		};
-		DF60209A232A39AD00930EA5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DF60209B232A39AD00930EA5 /* Headline.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DF6020A1232A39AD00930EA5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DF6020A6232A39AD00930EA5 /* Test1209.app */,
-				DF6020A8232A39AD00930EA5 /* Test1209Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		E4E17735A1CAD05FA9E06DA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,10 +356,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DF6020A1232A39AD00930EA5 /* Products */;
-					ProjectRef = DF6020A0232A39AD00930EA5 /* Test1209.xcodeproj */;
-				},
-				{
 					ProductGroup = DF602062232A397B00930EA5 /* Products */;
 					ProjectRef = DF602061232A397B00930EA5 /* Test1209.xcodeproj */;
 				},
@@ -464,20 +381,6 @@
 			fileType = wrapper.cfbundle;
 			path = Test1209Tests.xctest;
 			remoteRef = DF602068232A397B00930EA5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DF6020A6232A39AD00930EA5 /* Test1209.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Test1209.app;
-			remoteRef = DF6020A5232A39AD00930EA5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DF6020A8232A39AD00930EA5 /* Test1209Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Test1209Tests.xctest;
-			remoteRef = DF6020A7232A39AD00930EA5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -637,22 +540,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				DF602059232A397B00930EA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DF602095232A39AD00930EA5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF602096232A39AD00930EA5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DF602097232A39AD00930EA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF602098232A39AD00930EA5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
